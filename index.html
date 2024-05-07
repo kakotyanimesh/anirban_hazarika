@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>offline one</title>
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+  
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <script src="https://kit.fontawesome.com/248fa765a9.js" crossorigin="anonymous"></script>
   <link
@@ -13,6 +14,7 @@
 />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body >
@@ -28,12 +30,15 @@
       <ul class="navMenu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="faq.html">Investment</a></li>
           <li><a href="#">Contact</a></li>
+          
       </ul>
   </nav>
   <div class="header">
+   
     <h1>Reverencing your <strong><em>story</em> </strong>  
       so that you can cherish it for a lifetime.</h1>
   </div>
@@ -57,8 +62,8 @@
 
 
     </div>
-    <div id="about_image">
-      <img src="assests/images/ownerbg.jpg" alt="">
+    <div id="about_image" >
+      <img  src="assests/images/ownerbg.jpg" alt="">
     </div>
     </div>
 
@@ -91,9 +96,9 @@
 
         </div>
         <div class="anim2" id="gallery">
-          <h3 style="font-family: Brolia;"><a href="">visit our memory</a></h3>
+          <h3 style="font-family: Brolia;"><a href="portfolio.html">visit our memory</a></h3>
           <div id="circlev">
-            <a href=""><i class="ri-arrow-right-line"></i></a>
+            <a href="portfolio.html"><i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
         
@@ -116,14 +121,14 @@
         giving you the space and comfort to be your true honest selves.
       </h1>
       <div class="button-container">
-        <button class="aesthetic-button">OUR ADVENTURE STARTS HERE</button>
+        <a href="https://api.whatsapp.com/send?phone=6002789349"><button class="aesthetic-button">OUR ADVENTURE STARTS HERE</button></a>
       </div>
     </div>
     
 
     <!-- slider -->
 <div class="gallery-wrap">
-  <!-- <img src="assests/images/back.png" id="backbtn"> -->
+ 
   <div class="gallery">
     <div>
       <span><img src="assests/images/anirban2.0.jpeg" alt=""></span>
@@ -153,9 +158,11 @@
       </span>
     </div>
   </div>
-  <!-- <img src="assests/images/next.png" id="nextbtn"> -->
+  
 </div>
     
+
+
 
 <div id="texttwo">
   <h1 id="texttwo_1">Your Story is in motion</h1>
@@ -189,7 +196,7 @@
           <h3>Blog Post 1 Title</h3>
         </a>
       </div>
-      <div class="blog-post">
+      <div class="blog-post" id="rounded">
         <a href="blog-post-2.html">
           <img src="assests/images/backgroundimgae.jpg" alt="Blog Post 2">
           <h3>Blog Post 2 Title</h3>
@@ -219,7 +226,7 @@
 
       </div>
       <div id="bimg">
-        <img src="assests/images/backgroundimgae.jpg" alt="">
+        <img id="imagessss" src="assests/images/backgroundimgae.jpg" alt="">
 
 
       </div>
@@ -278,9 +285,19 @@
   
     </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-<script src="script.js"></script>
+
+<!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+    <script src="script.js"></script>
 </html>

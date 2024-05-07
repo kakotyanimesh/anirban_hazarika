@@ -172,6 +172,7 @@ li a:hover{
  
 
 }
+
 @media (max-width: 768px) {
   #home {
     background-size: cover; /* Adjust background size for smaller screens */
@@ -215,7 +216,7 @@ li a:hover{
 
 #about_text p{
   color: #242423;
-  font-family: Aesthetic-Regular;
+  /* font-family: Aesthetic-Regular; */
   font-size: 12px;
   line-height: 2.3;
   
@@ -255,7 +256,8 @@ li a:hover{
   }
 
   #about_text p {
-    font-size: 14px; 
+    font-size: 5vw; 
+
     line-height: 1.6; 
     letter-spacing: 1px;
   }
@@ -403,7 +405,11 @@ li a:hover{
   height: 37vw;
   margin-bottom: 1vw;
   
+  
 
+}
+#imgeff img{
+  object-fit: cover;
 }
 #secpic p{
   text-align: right;
@@ -454,7 +460,7 @@ a{
     order: 2; 
   }
 
-  #firstpic #picimg, #secpic #picimg {
+  #firstpic #secpic #picimg {
     height: auto;
     margin-bottom: 4vw; 
   }
@@ -597,44 +603,6 @@ a{
   }
 }
 
-
-/* .video-player {
-  width: 100%;
-  height: 40vw;
-  position: relative;
-  font-size: 0;
-  overflow: hidden;
-}
-.video {
-  width: 100%;
-}
-.controls__button {
-  background: none;
-  border: 0;
-  line-height: 1;
-  color: white;
-  text-align: center;
-  outline: 0;
-  padding: 100vw;
-  cursor: pointer;
-  max-width: 500vw;
-}
-.controls__slider {
-  width: 10px;
-  height: 30px;
-}
-.controls {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  flex-wrap: wrap;
-  background: rgba(0,0,0,0.1);
-  transform: translateY(0);
-}
-.controls > * {
-  flex: 1;
-} */
 
 
 
@@ -944,16 +912,16 @@ a{
   }
 
   .blog-post {
-    width: 80%; /* Adjust width for smaller screens */
+    width: 80%; 
   }
 
   .blog-post img {
-    width: 85vw; /* Adjust image width for smaller screens */
+    width: 85vw; 
     height: auto;
   }
 
   .blog-post h3 {
-    font-size: 15px; /* Adjust heading font size for smaller screens */
+    font-size: 15px; 
   }
 }
 
@@ -1064,6 +1032,7 @@ a{
 
 #textend{
   width: 100%;
+  /* margin-top: -7vw; */
   margin-bottom: 1vw;
   /* margin-top: 10px; */
   /* background-color: red; */
@@ -1122,3 +1091,954 @@ a{
   }
 }
 
+
+
+/* ................ABOUT PAGE..................... */
+
+
+#aboutPage{
+  min-height: 93vh;
+  width: 100%;
+  background-image: url(assests/images/b&wowner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+ 
+
+}
+@media (max-width: 768px) {
+  #aboutPage {
+    background-size: cover; /* Adjust background size for smaller screens */
+    background-position: center;
+    
+  }
+}
+
+.headerAbout h1{
+  /* font-family: Aesthetic-Regular; */
+  white-space:pre-wrap;
+  margin-top: 149px;
+  font-size: 5vw;
+  font-weight: 100;
+  text-align: center;
+  color: #e7e0dd;
+  padding-left: 113px;
+  padding-right: 114px;
+  
+}
+
+
+@media (max-width: 740px) {
+  .headerAbout h1{
+      font-size: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-weight: 15;
+      align-items: center;
+      
+  }
+}
+
+.aboutone{
+  margin-top: 5vw;
+  
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.textone{
+ 
+ padding-left: 5vw;
+ padding-right: 11vw;
+ padding-top: 9vw;
+
+}
+
+.textone h1{
+  font-size: 4vw;
+  font-weight: 100;
+}
+
+
+.aboutoneImage img{
+  height: 60vw;
+  
+}
+.textone p{
+  padding-top: 5vw;
+  font-size: 23px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutone {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+  }
+
+  .aboutoneImage {
+    order: -1; /* Image will appear before text */
+    
+  }
+
+  .textone {
+    padding: 8vw;
+    text-align: center;
+  }
+
+  .aboutoneImage img {
+    height: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .textone h1 {
+    font-size: 8vw;
+  }
+
+  .textone p {
+    padding-top: 7vw;
+    font-size: 13px;
+  }
+}
+
+.aboutcta{
+  margin-top: 7vw;
+  width: 100%;
+  height: 25vw;
+  background-image: url(assests/images/backgroundimgae.jpg);
+  background-position: center;
+  background-size: cover;
+  
+  text-align: center;
+  padding: 100px 0;
+}
+.aboutcta h1{
+  padding-top: 4vw;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #c7900f;
+  
+}
+
+
+@media(max-width: 768px){
+  .aboutcta h1{
+      font-size: 20px;
+      padding: 2.5vw;
+  }
+}
+
+
+.autograph{
+  margin-top: 3vw;
+  text-align: center;
+}
+.autograph h1{
+  font-family: Autography;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.autograph h2{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 3vw;
+  letter-spacing: 0.01;
+  font-weight: 100;
+
+}
+
+@media screen and (max-width: 768px) {
+  .autograph {
+    margin-top: 4vw;
+    text-align: center;
+  }
+
+  .autograph h1 {
+    font-size: 9vw; 
+  }
+
+  .autograph h2 {
+    padding: 5vw;
+    font-size: 4vw; 
+    line-height: 1.1; 
+  }
+}
+
+.autographtwo{
+  margin-top: -6vw;
+  /* background-color: #fff; */
+  text-align: center;
+}
+
+.autographtwo h2{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 3vw;
+  letter-spacing: 0.01;
+  font-weight: 100;
+
+}
+@media screen and (max-width: 768px) {
+  .autographtwo {
+    margin-top: 4vw;
+    text-align: center;
+  }
+
+ 
+  .autographtwo h2 {
+    padding: 5vw;
+    font-size: 4vw; 
+    line-height: 1.1; 
+  }
+}
+
+.onlyImage{
+  margin: 5vw;
+  display: flex;
+  justify-content: space-between;
+    
+}
+
+.onlyImageOne img{
+  height: 57vw;
+  width: 35vw;
+  
+  padding-bottom: 20vw;
+  
+}
+.onlyImageTwo img{
+  /* background-color: red; */
+  height: 55vw;
+  width: 28vw;
+  
+  padding-top: 20vw;
+}
+@media screen and (max-width: 768px) {
+  .onlyImage{
+    margin: 9vw;
+  }
+  .onlyImageOne img,
+  .onlyImageTwo img {
+    height: 58vw;
+    width: 36vw;
+  }
+}
+
+
+
+/* ...........films.............. */
+.films-header{
+  margin-top: 9vw;
+}
+.films-header h1{
+  
+  white-space: pre-wrap;
+  
+  font-size: 5vw;
+  font-weight: 100;
+  text-align: center;
+  color: #e7e0dd;
+  padding-left: 113px;
+  padding-right: 114px;
+}
+
+
+@media (max-width: 740px) {
+  .films-header{
+    margin-top: 39vw;
+    
+  }
+  .films-header h1{
+      font-size: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-weight: 15;
+      align-items: center;
+      
+  }
+}
+
+/* #weddingh1:hover{
+ background-image: url(assests/images/aesthetics.jpg);
+} */
+
+#fimshome{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(assests/images/black.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+ 
+
+}
+@media (max-width: 768px) {
+  #fimshome {
+    background-size: cover; /* Adjust background size for smaller screens */
+    background-position: center;
+    
+  }
+}
+
+
+/* Marquee styles */
+.marquee-films {
+  
+  display: flex ;
+  overflow: hidden ;
+  white-space: nowrap ;
+  width: 100% ;
+  font-size: 3vw;
+  font-family: GalleroVintage-DemoVersion-Regular;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+}
+.marquee__item_films {
+  animation-duration: 10s ;
+  animation-iteration-count: infinite ;
+  animation-name: marquee-content ;
+  animation-timing-function: linear ;
+  padding: 5px 15px 5px 15px ;
+}
+.marquee-films:hover .marquee__item_films {
+  animation-play-state: paused ;
+}
+
+
+@keyframes marquee-content {
+  from {
+    transform: translateX( 0% );
+  }
+  to {
+    transform: translateX( -100% );
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-films {
+    font-size: 30px; 
+    
+    padding-top: 40px;
+    
+  }
+}
+
+
+#filmsabout{
+  margin-top: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7vw;
+}
+
+#filmsabout_image img{
+  width: 38vw;
+  height: 41vw;
+  
+  
+}
+
+#filmsabout_text{
+  
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  
+  
+ 
+}
+
+#filmsabout_text h1{
+  color: #1f1f1f;
+  padding-bottom: 4vw;
+  padding-top: 2vw;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+#filmsabout_text p{
+  color: #1f1f1f;
+  
+  font-size: 20px;
+  line-height: 2.1;
+  text-align: start;
+  
+  letter-spacing: 2.9px;
+}
+
+
+@media (max-width: 768px) {
+  #filmsabout {
+    padding-top: 40px;
+    flex-direction: column; 
+    align-items: center;
+    margin: 5vw;
+  }
+  #filmsabout_image {
+    order: -1;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 3vw; /* Add some spacing between image and text */
+  }
+  #filmsabout_image img {
+    
+    width: 102%;
+    height: 47vh;
+    margin-bottom: 5vw;
+    
+  }
+
+  #filmsabout_text {
+    padding: 0; 
+    text-align: center; 
+  }
+
+  #filmsabout_text h1 {
+    font-size: 32px; 
+    padding-bottom: 6vw;
+  }
+
+  #filmsabout_text p {
+    /* background-color: red; */
+    font-size: 14px; 
+    line-height: 1.1;
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+.videobook{
+  padding-top: 4vw;
+}
+.videoabout{
+  text-align: center;
+  /* background-color: red; */
+  margin: 219px;
+}
+
+.videobook_text{
+  /* background-color: red; */
+  padding-left: 9.375vw;
+  padding-right: 9.375vw;
+  padding-bottom: 2vw;
+}
+
+.videobook_text h1{
+  color: #1f1f1f;
+  padding-bottom: 2.19vw;
+  font-size: 3.2016666666666667vw;
+  font-weight: 100;
+}
+.videobook_text h3{
+  font-size: 1.0416666666666667vw;
+  color: #1f1f1f;
+  padding-bottom: 2.19vw;
+  font-weight: 100;
+  /* line-height:  1.6666666666666667vw; */
+}
+.videobook_text p{
+  font-size: 1.2816666666666665vw;
+  line-height: 2.0506640625vw;
+  color: #1f1f1f;
+  padding-bottom: 2.19vw;
+  font-weight: 100;
+  letter-spacing: normal;
+}
+
+
+:is(vimeo-embed, youtube-embed) {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--video-embed-bdrs, 0.25em);
+  display: grid;
+  inline-size: 100%;
+  position: relative;
+}
+:is(vimeo-embed, youtube-embed) button {
+  background-color: var(--button-bgc, rgb(190, 182, 182));
+  block-size: var(--button-h, 50px);
+  border: 0;
+  border-radius: var(--button-bdrs, 14%);
+  display: grid;
+  inline-size: var(--button-w, 75px);
+  opacity: var(--button-op, 0.8);
+  position: absolute;
+  place-self: center;
+  transition: all .2s ease-in;
+}
+:is(vimeo-embed, youtube-embed) button::before {
+  aspect-ratio: 1;
+  background: #FFF;
+  block-size: 1.5em;
+  clip-path: polygon(20% 0%, 20% 100%, 100% 50%);
+  content: '';
+  place-self: center;
+}
+:is(vimeo-embed, youtube-embed) :is(iframe, img) { 
+  block-size: 100%;
+  border: 0;
+  border-radius: inherit;
+  inline-size: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+}
+:is(vimeo-embed, youtube-embed) iframe:not([src=""]) + button {
+  display: none;
+}
+:is(vimeo-embed button) { --button-bgc: #00adef; }
+:is(vimeo-embed, youtube-embed):hover button { --button-op: 1; }
+
+
+@media (max-width: 768px) {
+  .videoabout {
+    margin-top: 16vw;
+    margin-left: 11vw;
+    margin-right: 11vw;
+  }
+  .videobook{
+    margin-bottom: 5vw;
+  }
+
+  .videobook_text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .videobook_text h1 {
+    font-size: 24px;
+  }
+
+  .videobook_text h3 {
+    font-size: 13.5px;
+    padding-top: 6px;
+  }
+
+  .videobook_text p {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 15px;
+  }
+}
+
+.button-container_films {
+  margin-top: 30px;
+}
+
+.button-container_films_aesthetic-button {
+  padding: 1.5vw 2.5vw;
+  font-family: "Aesthetic-Regular", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #774231;
+  border: none;
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container_films_aesthetic-button:hover {
+  background-color: #5f5757;
+}
+
+
+
+.aboutcta_films{
+  margin-top: 7vw;
+  width: 100%;
+  height: 25vw;
+  background-image: url(assests/images/backgroundimgae.jpg);
+  background-position: center;
+  background-size: cover;
+  
+  text-align: center;
+  padding: 100px 0;
+}
+.aboutcta_films h1{
+  padding-top: 1vw;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #c7900f;
+  
+}
+
+
+@media(max-width: 768px){
+  .aboutcta_films{
+    
+    height: 83vw;
+    
+    padding: 86px 0;
+  }
+  .aboutcta_films h1{
+      font-size: 20px;
+      padding: 3.5vw;
+  }
+  .button-container_films{
+    padding-top: 2px;
+  }
+}
+
+
+/* ..........portfolio-header........... */
+.portfolio-header{
+  margin-top: 9vw;
+}
+.portfolio-header h1{
+  
+  white-space: pre-wrap;
+  
+  font-size: 5vw;
+  font-weight: 100;
+  text-align: center;
+  color: #e7e0dd;
+  padding-left: 113px;
+  padding-right: 114px;
+}
+
+
+@media (max-width: 740px) {
+  .portfolio-header{
+    margin-top: 39vw;
+    
+  }
+  .portfolio-header h1{
+      font-size: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-weight: 15;
+      align-items: center;
+      
+  }
+}
+
+#portfoliohome{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(assests/images/AHP09675-Enhanced-NR.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+ 
+
+}
+
+.portfolio_main{
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 6vw;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  
+  align-items: center;
+}
+
+.portfolio_inside{
+  /* width: 100%; */
+  height: 30vw;
+  
+}
+
+.portfolio_inside_one_img img{
+  width: 27vw;
+  height: 17vw;
+  
+}
+
+/* .portfolio_inside_one_text{
+  background-color: red;
+} */
+
+.portfolio_inside_one_text h3 {
+  padding-top: 2vw;
+  text-align: center;
+  padding-bottom: 2vw;
+  font-weight: 100;
+  color: #1f1f1f;
+}
+
+.portfolio_inside_one_text h1{
+  font-size: 30px;
+  letter-spacing: normal;
+  text-align: center;
+  font-weight: 200;
+  color: #1f1f1f;
+
+}
+
+.portfolio_inside_one_text p{
+  text-align: center;
+  padding-top: 63px;
+  font-size: 20px;
+  
+
+
+}
+
+.portfolio_inside_one_text a{
+  color: #1f1f1f;
+
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio_main {
+    flex-direction: column;
+    margin-top: 66px;
+    padding-left: 8vw;
+    padding-right: 9vw;
+  }
+
+  .portfolio_inside_one_text h3{
+    padding-top: 28px;
+  }
+  .portfolio_inside_one_text h1{
+    padding-top: 21px;
+  }
+  .portfolio_inside_one_text p{
+    padding-top: 34px;
+    padding-bottom: 20px;
+  }
+  
+  .portfolio_inside {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio_inside_one_img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.text_portfolio{
+  margin-top: 4vw;
+    color: #1f1f1f;
+  
+  text-align: center;
+}
+
+.text_portfolio h1{
+  font-size: 3vw;
+  font-weight: 300;
+  color: #1f1f1f;
+
+}
+
+@media screen and (max-width: 768px) {
+  .text_portfolio {
+    margin-top: 11px;
+  
+    margin-left: -28vw;
+
+  }
+  
+  .text_portfolio h1 {
+    font-size: 24px; 
+  }
+}
+
+
+.last_images{
+  display: flex;
+  align-items: center;
+  margin-top: 6vw;
+  margin-left: 6vw;
+
+}
+
+.last_images img{
+  width: 15vw;
+  height: 14vw;
+}
+@media screen and (max-width: 768px) {
+  .last_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding-right: 24px;
+  }
+  
+  .last_images img {
+    width: calc(50% - 10px); /* Subtracting margin */
+    height: auto;
+    margin: 0 5px 10px 5px; /* Adding margin between images */
+  }
+}
+
+
+
+/* .........investment........... */
+.investment-header{
+  margin-top: 9vw;
+}
+.investment-header h1{
+  
+  white-space: pre-wrap;
+  
+  font-size: 5vw;
+  font-weight: 100;
+  text-align: center;
+  color: #e7e0dd;
+  padding-left: 113px;
+  padding-right: 114px;
+}
+
+
+@media (max-width: 740px) {
+  .investment-header{
+    margin-top: 39vw;
+    
+  }
+  .investment-header h1{
+      font-size: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-weight: 15;
+      align-items: center;
+      
+  }
+}
+
+#investmenthome{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(assests/images/AHP09675-Enhanced-NR.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+ 
+
+}
+
+
+.investment-home{
+  margin-top: 7vw;
+  padding-left: 33.263vw;
+  position: relative;
+  
+}
+.investment-home img{
+  width: 34.008vw;
+  height: 34.008vw;
+  border-radius: 33px;
+}
+
+.investment-home h1{
+  position: absolute;
+  padding-top: 14.068vw;
+  color: #fff;
+  font-size: 59px;
+  font-weight: 100;
+  /* padding-left: 14px; */
+}
+
+@media (max-width: 768px) {
+  .investment-home {
+    padding-left: 9%;
+  }
+
+  .investment-home img {
+    width: 83vw;
+    height: 68vw;
+    border-radius: 10px;
+  }
+
+  .investment-home h1 {
+    padding-top: 99px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+
+.text_investment{
+  margin-top: 4vw;
+  padding-left: 3.3203125vw;
+  padding-right: 3.3203125vw;
+}
+
+.text_investment h1{
+  font-weight: 200;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .text_investment {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text_investment h1 {
+    font-size: 24px;
+  }
+}
+
+.moneydescription{
+ margin-top: 4vw;
+  padding-left: 30px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.moneydescription-IMG img{
+  width: 40vw;
+  height: 40vw;
+
+}
+
+.moneydescription_text{
+  padding-left: 10vw;
+  padding-right: 5vw;
+  margin-top: -17vw;
+}
+
+.moneydescription_text h1{
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.paragraph{
+  padding-top: 2vw;
+}
+
+.paragraph p{
+  font-size: 20px;
+}
+
+.p_two{
+  padding-top: 2vw;
+}
+
+.button-container_investment{
+  padding-top: 3.5vw;
+  text-align: center;
+}
+
+.aesthetic-button_investment {
+  padding: 1vw 1vw;
+  font-family: "Aesthetic-Regular", sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #774231;
+  border: none;
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aesthetic-button_investment:hover {
+  background-color: #5f5757;
+}
