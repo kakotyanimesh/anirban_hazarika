@@ -2002,7 +2002,7 @@ a{
 .moneydescription_text{
   padding-left: 10vw;
   padding-right: 5vw;
-  margin-top: -17vw;
+  margin-top: 3vw;
 }
 
 .moneydescription_text h1{
@@ -2023,7 +2023,7 @@ a{
 }
 
 .button-container_investment{
-  padding-top: 3.5vw;
+  padding-top: 5.5vw;
   text-align: center;
 }
 
@@ -2041,4 +2041,23 @@ a{
 
 .aesthetic-button_investment:hover {
   background-color: #5f5757;
+}
+
+
+
+#price-section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 15vw;
+  margin: 5vw;
+}
+
+.price-section-img-two img{
+  width: 300px;
+  height: 300px;
+}
+.price-section-img-one img{
+  width: 300px;
+  height: 300px;
 }
