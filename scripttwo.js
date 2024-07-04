@@ -16,3 +16,11 @@ const menuIcon = document.querySelector(".toggle");
       const video = button.previousElementSibling;
       video.src = video.dataset.src;
     }))
+
+
+    // document.querySelectorAll('.accordion').forEach(button => {
+    //     button.addEventListener('click', () => {
+    //         const panel = button.nextElementSibling;
+    //         panel.classList.toggle('show');
+    //     });
+    // });
