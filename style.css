@@ -216,11 +216,11 @@ li a:hover{
 
 #about_text p{
   color: #242423;
-  /* font-family: Aesthetic-Regular; */
-  font-size: 12px;
+  font-family: JE_font;
+  font-size: 15px;
   line-height: 2.3;
   
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   letter-spacing: 2.5px;
 }
 
@@ -2229,4 +2229,253 @@ a{
 }
 .centered-list li {
   margin-bottom: 1em; /* Adjust margin as needed */
+}
+
+
+#about-contact{
+  margin-top: 5vw;
+  display: flex;
+  justify-content: space-between;
+ 
+  margin-left: 3vw;
+  margin-right: 7vw;
+  margin-bottom: 5vw;
+}
+
+#about_image-contact img{
+  width: 38vw;
+  height: 41vw;
+  
+  
+}
+
+#about_text-contact{
+  
+  width: 100%;
+  padding-left: 2vw;
+  padding-right: 11vw;
+  
+  
+ 
+}
+
+#about_text-contact h1{
+  
+  padding-bottom: 2.0833333333333335vw;
+  text-align: left;
+  font-size: 51px;
+  font-weight: 200;
+  color: #1f1f1f;
+  padding-top: 10.807291666666666vw;
+}
+
+#about_text-contact h3{
+  color: #1f1f1f;
+  font-family: JE_font;
+  font-size: 1.2816666666666665vw;
+  line-height: 2.0506640625vw;
+  
+  /* text-transform: lowercase; */
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+
+@media (max-width: 768px) {
+  #about-contact {
+    
+    flex-direction: column; 
+    align-items: center;
+    margin: 5vw;
+  }
+  #about_image-contact {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 3vw; /* Add some spacing between image and text */
+  }
+  #about_image-contact img {
+    
+    width: 80%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 3vw; /* Add some spacing between image and text */
+    
+  }
+
+  #about_text-contact {
+    padding: 0; 
+    text-align: center; 
+  }
+
+  #about_text-contact h1 {
+    font-size: 32px; 
+    padding-bottom: 6vw;
+  }
+
+  #about_text-contact h3{
+    color: #1f1f1f;
+    font-family: JE_font;
+    font-size: 4.282vw;
+    line-height: 5.051vw;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+  }
+
+  #about_text-contact p {
+    font-size: 5vw; 
+
+    line-height: 1.6; 
+    letter-spacing: 1px;
+  }
+}
+
+
+
+.container {
+  display: flex;
+  margin-top: 7vw;
+  margin-left: 6vw;
+  margin-right: 5vw;
+  margin-bottom: 4vw;
+
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  width: 100%;
+  height: 47vw;
+  
+  object-fit: cover;
+}
+
+.form-section {
+  flex: 1;
+  padding-left: 8vw;
+  padding-top: 4vw;
+  
+}
+
+.form-section p {
+  font-size: 14px;
+  /* color: #333; */
+}
+
+.form-section form {
+  margin-top: 20px;
+}
+
+.form-section label {
+  font-size: 1.2816666666666665vw;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1f1f1f;
+}
+.form-section option {
+  display: block;
+  margin-bottom: 10px;
+  
+  
+}
+
+.required {
+  color: #7e5e49;
+  font-size: 1.0416666666666667vw;
+  padding-left: 9px;
+}
+
+.name-input {
+  display: flex;
+  gap: 10px;
+}
+
+.name-input input {
+  flex: 1;
+}
+
+.form-section input[type="text"], 
+.form-section input[type="email"],
+.form-section input[type="Phonenumber"], 
+.form-section input[type="social-media"],
+.form-section select[type="menu"]
+{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-section input[type="text"]::placeholder,
+.form-section input[type="email"]::placeholder,
+.form-section input[type="Phonenumber"]::placeholder,
+.form-section input[type="social-media"]::placeholder,
+.form-section select[type="menu"]::placeholder  {
+  color: #999;
+}
+
+.form-section button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #7e5e49;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-section button[type="submit"]:hover {
+  background-color: #7e5e49;
+}
+
+#p-tag{
+  font-size: 1.2816666666666665vw; color: #1f1f1f; padding-bottom: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      margin: 20px;
+  }
+  
+  .image-section img {
+      height: auto;
+  }
+
+  .form-section {
+      padding: 20px;
+  }
+
+  .form-section label {
+      font-size: 4vw;
+  }
+
+  .form-section input[type="text"], 
+  .form-section input[type="email"],
+  .form-section input[type="Phonenumber"], 
+  .form-section input[type="social-media"],
+  .form-section select[type="menu"] {
+      font-size: 3.5vw;
+  }
+
+  .form-section button[type="submit"] {
+      font-size: 3.5vw;
+  }
+  #p-tag{
+    font-size: 4vw;
+  }
+
+  .required {
+    
+    font-size: 3.0416666666666667vw;
+    
+  }
+
+  .form-section p {
+    font-size: 11px;
+    /* color: #333; */
+  }
 }
